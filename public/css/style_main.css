@@ -1,0 +1,288 @@
+.form-group.has-error .form-control,
+.form-group.has-error,
+.sub-form-group.has-error,
+.input-group-addon {
+	border-color: #dd4b39;
+	box-shadow: none;
+}
+
+.help-block {
+	color: #dd4b39 !important;
+	 
+}
+
+.customer_name_field .sub-form-group,
+.servicer_name_field .sub-form-group {
+	max-width: 100%;
+}
+.route_list_time .creative_btn{
+   text-transform: capitalize;
+   line-height: 2;
+   font-size:18px;
+}
+.route_request_btn{
+  line-height: 2 !important;
+}
+.route_error{
+  border-color:#f00 !important;
+}
+.product_detail_slider .img-thumbnail{
+   border:none !important;
+}
+.product_detail_text .blue-btn{
+  margin-top:0px;
+}
+.product_detail_text  form{
+  margin-top:20px;
+}
+.our_project_bx .item_content h4{
+  font-size: 30px;
+}
+.product_detail_text .price_bx h3{
+  font-size: 33px;
+  margin-top: 20px;
+}
+.cart-grey {
+  background: #F1f1f1;
+}
+.cart_main  .breadcrumb-cart .breadcrumb{
+  background-color: #fff;
+}
+.cart_main .product_delever_bx{
+  text-align: right;
+}
+.cart_product_bx .product_img_bx{
+  height: auto;
+}
+.custom_inscrease_btn input[type="text"] {
+  padding: 0 33%;
+  text-align: center;
+  height: 26px;
+  background-color: #1bb3f5;
+  color: #fff;
+  border-radius: 5px;
+  border-color: #1bb3f5;
+}
+
+.custom_inscrease_btn .pt_QuantityButton{
+  outline: none;
+}
+
+.product_delever_bx .price_hd{
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    padding: 0 15px;
+    font-size: 30px;
+    text-align: center;
+    color: #1bb3f5;
+}
+
+.cart_main .product_delever_bx {
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.product_delever_bx button.btn.btn-danger {
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  line-height: 28px;
+  margin-bottom: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.cart-qty-update-btn{
+    line-height: 1.9em;
+    border-radius: 1px;
+    font-size: 18px;
+}
+
+#rangeslider {
+  height: 10px; 
+
+}
+.product_sidebar_bx {
+  padding-bottom: 50px;
+}
+.route_list_bx{
+  min-height:150px;
+}
+.adress_print_bx-add{
+  
+  top: 5px;
+  float: right;
+  position: absolute;
+  right: 10px;
+  padding: 0px;
+}
+.adress_print_bx-add button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #f00;
+  padding-left: 5px;
+}
+.update_add label{
+  font-weight:bold;
+}
+.order_list_main .order_sumary_product .product_list_detail_comn {
+  max-width: 76%;
+}
+.map_bx .iframe_outer {
+  height:400px;
+}
+.iframe_outer #map_convas{
+     
+      height: 100%;
+      width: 100%;
+      border: none;
+}
+.red_error{
+  border:1px solid #f00 !important;
+}
+.filter_block .form_group, .filter_block .form-control{
+  margin:0px;
+  height:auto;
+}
+.box-shaw{
+    padding: 10px;
+  border-radius: 0px;
+  -webkit-box-shadow: none;  
+   box-shadow: none;  
+}
+.firstup{
+  text-transform: capitalize;
+}
+.place_order_sec{
+  float: right;
+  margin-bottom:20px;
+}
+.place_order_sec .btn{
+  margin-top:0px important;
+}
+
+
+.overlay-fixed
+{
+/* display: flex !important; */
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.5607843137254902);
+} 
+
+.overlay-fixed img
+{
+  background-color: #fff;
+  border-radius: 100%;
+  padding: 5px;
+}
+.stripe_step{
+  width:100%;
+}
+.radio_step.visa-card {
+  max-width: 30%;
+}
+ 
+.edit-profile-main
+{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.edit-profile-main  .logoContainer
+{
+margin:0;
+}
+.user-img.edit-profile-main .fileContainer
+{
+  position: relative;
+  margin-left: 15px;
+  width: 90px;
+  cursor: pointer;
+  overflow: visible;
+}
+.edit-profile-main .fileContainer .edit-btn-btn
+{
+  width: 100%;
+  height: 32px;
+  cursor: pointer;
+  font-weight: normal;
+  overflow: hidden;
+  display: block;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  background: #1bb3f5;
+  border: none;
+  font-size: 20px;
+  color: #fff;
+}
+
+.edit-profile-main .fileContainer span
+{
+  display: none;
+  font-size: 0;
+}
+.edit-profile-main .fileContainer:hover .edit-btn-btn
+{
+  background-color: #1798d0;
+}
+
+.accountashboard select.form-control:not([size]):not([multiple])
+{
+  height: 49px;
+}
+.accountashboard .row-margin
+{
+  margin:0 -15px; 
+}
+.accountashboard .flex-start
+{
+  justify-content: flex-start;
+}
+
+.rating_star{
+  cursor: pointer;  
+}
+
+.rating { 
+  border: none;
+  float: left;
+  cursor: pointer;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+  color: #ddd; 
+ float: right; 
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 

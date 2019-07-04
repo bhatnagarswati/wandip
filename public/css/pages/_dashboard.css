@@ -1,0 +1,68 @@
+.user-img {
+  position: relative;
+  text-align: center;
+  margin-bottom: 15px;
+  display: inline-block; }
+  .user-img .logoContainer {
+    width: 121px;
+    height: 121px;
+    border-radius: 100%;
+    border: solid 1px #e2e2e2;
+    padding: 6px;
+    position: relative;
+    text-align: center;
+    background: #fff;
+    margin: 0 auto; }
+    .user-img .logoContainer figure {
+      width: 100%;
+      height: 100%;
+      border-radius: 100%;
+      overflow: hidden;
+      display: block;
+      margin: 0 auto;
+      position: relative; }
+    .user-img .logoContainer img {
+      width: 110%;
+      height: 110%;
+      max-width: initial;
+      position: absolute;
+      top: -100%;
+      bottom: -100%;
+      left: -100%;
+      right: -100%;
+      margin: auto;
+      border-radius: 100%; }
+  .user-img .fileContainer {
+    position: absolute;
+    top: 3px;
+    right: 14px; }
+    .user-img .fileContainer span {
+      overflow: hidden;
+      display: block;
+      white-space: nowrap;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      cursor: pointer;
+      width: 28px;
+      height: 28px;
+      background: #fff;
+      border-radius: 100%;
+      border: solid 1px #ccc;
+      line-height: 26px;
+      font-size: 11px;
+      color: #ccc; }
+    .user-img .fileContainer input[type="file"] {
+      opacity: 0;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      position: absolute;
+      cursor: pointer; }
+  .user-img h5 {
+    color: #000;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    margin-top: 15px; }

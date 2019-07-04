@@ -1,0 +1,6 @@
+.route_detail_map_bx {
+  height: 400px;
+  width: 100%; }
+  .route_detail_map_bx iframe {
+    width: 100%;
+    height: 100%; }
