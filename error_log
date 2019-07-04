@@ -1,0 +1,65 @@
+[18-Jan-2019 11:09:05 UTC] PHP Warning:  Unterminated comment starting line 100 in /home/adbluefinder/public_html/staging/vendor/laravel/framework/src/Illuminate/View/Compilers/BladeCompiler.php on line 170
+[18-Jan-2019 11:09:05 UTC] PHP Warning:  Unterminated comment starting line 100 in /home/adbluefinder/public_html/staging/storage/framework/views/e3320299c98612976c9dbb693cd25fb472a4eda5.php on line 100
+[20-Feb-2019 11:07:23 UTC] PHP Fatal error:  Declaration of App\Shop\Customers\Repositories\CustomerRepository::charge(string $amount, array $options) must be compatible with App\Shop\Customers\Repositories\Interfaces\CustomerRepositoryInterface::charge(int $amount, array $options) in /home/adbluefinder/public_html/staging/app/Shop/Customers/Repositories/CustomerRepository.php on line 18
+[26-Feb-2019 06:28:26 UTC] PHP Fatal error:  Trait 'App\Http\Controllers\Api\v1\Customer\Routers\ProductTransformable' not found in /home/adbluefinder/public_html/staging/app/Http/Controllers/Api/v1/Customer/Routers/RouteController.php on line 28
+[11-Mar-2019 07:21:54 UTC] PHP Fatal error:  Declaration of App\Shop\Servicers\Repositories\ServicerRepository::createServicer(array $data): App\Shop\Servicers\Servicer must be compatible with App\Shop\Servicers\Repositories\Interfaces\ServicerRepositoryInterface::createServicer(array $params): App\Shop\Servicers\Repositories\Interfaces\Employee in /home/adbluefinder/public_html/staging/app/Shop/Servicers/Repositories/ServicerRepository.php on line 14
+[11-Mar-2019 07:21:56 UTC] PHP Fatal error:  Declaration of App\Shop\Servicers\Repositories\ServicerRepository::createServicer(array $data): App\Shop\Servicers\Servicer must be compatible with App\Shop\Servicers\Repositories\Interfaces\ServicerRepositoryInterface::createServicer(array $params): App\Shop\Servicers\Repositories\Interfaces\Employee in /home/adbluefinder/public_html/staging/app/Shop/Servicers/Repositories/ServicerRepository.php on line 14
+[11-Mar-2019 07:21:59 UTC] PHP Fatal error:  Declaration of App\Shop\Servicers\Repositories\ServicerRepository::createServicer(array $data): App\Shop\Servicers\Servicer must be compatible with App\Shop\Servicers\Repositories\Interfaces\ServicerRepositoryInterface::createServicer(array $params): App\Shop\Servicers\Repositories\Interfaces\Employee in /home/adbluefinder/public_html/staging/app/Shop/Servicers/Repositories/ServicerRepository.php on line 14
+[11-Mar-2019 07:25:00 UTC] PHP Fatal error:  Declaration of App\Shop\Servicers\Repositories\ServicerRepository::createServicer(array $data): App\Shop\Servicers\Servicer must be compatible with App\Shop\Servicers\Repositories\Interfaces\ServicerRepositoryInterface::createServicer(array $params): App\Shop\Servicers\Repositories\Interfaces\Employee in /home/adbluefinder/public_html/staging/app/Shop/Servicers/Repositories/ServicerRepository.php on line 14
+[11-Mar-2019 07:25:02 UTC] PHP Fatal error:  Declaration of App\Shop\Servicers\Repositories\ServicerRepository::createServicer(array $data): App\Shop\Servicers\Servicer must be compatible with App\Shop\Servicers\Repositories\Interfaces\ServicerRepositoryInterface::createServicer(array $params): App\Shop\Servicers\Repositories\Interfaces\Employee in /home/adbluefinder/public_html/staging/app/Shop/Servicers/Repositories/ServicerRepository.php on line 14
+[11-Mar-2019 07:26:53 UTC] PHP Fatal error:  Declaration of App\Shop\Servicers\Repositories\ServicerRepository::createServicer(array $data): App\Shop\Servicers\Servicer must be compatible with App\Shop\Servicers\Repositories\Interfaces\ServicerRepositoryInterface::createServicer(array $params): App\Shop\Servicers\Repositories\Interfaces\Employee in /home/adbluefinder/public_html/staging/app/Shop/Servicers/Repositories/ServicerRepository.php on line 14
+[11-Mar-2019 07:28:07 UTC] PHP Fatal error:  Declaration of App\Shop\Servicers\Repositories\ServicerRepository::createServicer(array $data): App\Shop\Servicers\Servicer must be compatible with App\Shop\Servicers\Repositories\Interfaces\ServicerRepositoryInterface::createServicer(array $params): App\Shop\Servicers\Repositories\Interfaces\Employee in /home/adbluefinder/public_html/staging/app/Shop/Servicers/Repositories/ServicerRepository.php on line 14
+[12-Mar-2019 05:52:31 UTC] Stripe Notice: Undefined property of Stripe\Customer instance: sources
+[12-Mar-2019 06:18:45 UTC] Stripe Notice: Undefined property of Stripe\Customer instance: sources
+[12-Mar-2019 06:18:51 UTC] Stripe Notice: Undefined property of Stripe\Customer instance: sources
+[12-Mar-2019 06:20:48 UTC] Stripe Notice: Undefined property of Stripe\Customer instance: sources
+[14-Mar-2019 11:06:01 UTC] PHP Fatal error:  Class App\v1\Carts\Repositories\CartRepository contains 1 abstract method and must therefore be declared abstract or implement the remaining methods (App\v1\Carts\Repositories\Interfaces\CartRepositoryInterface::getShippingCharges) in /home/adbluefinder/public_html/staging/app/v1/Carts/Repositories/CartRepository.php on line 18
+[18-Mar-2019 07:02:56 UTC] PHP Warning:  Uncaught ErrorException: require_once(Twilio/autoload.php): failed to open stream: No such file or directory in /home/adbluefinder/public_html/staging/app/Http/Controllers/Api/v1/AuthController.php:17
+Stack trace:
+#0 /home/adbluefinder/public_html/staging/app/Http/Controllers/Api/v1/AuthController.php(17): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(Tw...', '/home/adbluefin...', 17, Array)
+#1 /home/adbluefinder/public_html/staging/app/Http/Controllers/Api/v1/AuthController.php(17): require_once()
+#2 /home/adbluefinder/public_html/staging/vendor/composer/ClassLoader.php(444): include('/home/adbluefin...')
+#3 /home/adbluefinder/public_html/staging/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/adbluefin...')
+#4 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Http\\Contro...')
+#5 [internal function]: spl_autoload_call('App\\Http\\Contro...')
+#6 /home/adbluefinder/public_html/staging/vendor/laravel/framework/src/Illuminate/Containe in /home/adbluefinder/public_html/staging/app/Http/Controllers/Api/v1/AuthController.php on line 17
+[18-Mar-2019 07:02:56 UTC] PHP Fatal error:  main(): Failed opening required 'Twilio/autoload.php' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/adbluefinder/public_html/staging/app/Http/Controllers/Api/v1/AuthController.php on line 17
+[18-Mar-2019 07:03:36 UTC] PHP Warning:  Uncaught ErrorException: require_once(../../Twilio/autoload.php): failed to open stream: No such file or directory in /home/adbluefinder/public_html/staging/app/Http/Controllers/Api/v1/AuthController.php:17
+Stack trace:
+#0 /home/adbluefinder/public_html/staging/app/Http/Controllers/Api/v1/AuthController.php(17): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(.....', '/home/adbluefin...', 17, Array)
+#1 /home/adbluefinder/public_html/staging/app/Http/Controllers/Api/v1/AuthController.php(17): require_once()
+#2 /home/adbluefinder/public_html/staging/vendor/composer/ClassLoader.php(444): include('/home/adbluefin...')
+#3 /home/adbluefinder/public_html/staging/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/adbluefin...')
+#4 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Http\\Contro...')
+#5 [internal function]: spl_autoload_call('App\\Http\\Contro...')
+#6 /home/adbluefinder/public_html/staging/vendor/laravel/framework/src/Illuminate/Co in /home/adbluefinder/public_html/staging/app/Http/Controllers/Api/v1/AuthController.php on line 17
+[18-Mar-2019 07:03:36 UTC] PHP Fatal error:  main(): Failed opening required '../../Twilio/autoload.php' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/adbluefinder/public_html/staging/app/Http/Controllers/Api/v1/AuthController.php on line 17
+[18-Mar-2019 07:04:36 UTC] PHP Warning:  Uncaught ErrorException: require_once(/home/adbluefinder/public_html/staging/app/Http/Controllers/Api/v1Twilio/autoload.php): failed to open stream: No such file or directory in /home/adbluefinder/public_html/staging/app/Http/Controllers/Api/v1/AuthController.php:17
+Stack trace:
+#0 /home/adbluefinder/public_html/staging/app/Http/Controllers/Api/v1/AuthController.php(17): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(/h...', '/home/adbluefin...', 17, Array)
+#1 /home/adbluefinder/public_html/staging/app/Http/Controllers/Api/v1/AuthController.php(17): require_once()
+#2 /home/adbluefinder/public_html/staging/vendor/composer/ClassLoader.php(444): include('/home/adbluefin...')
+#3 /home/adbluefinder/public_html/staging/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/adbluefin...')
+#4 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Http\\Contro...')
+#5 [internal function]: spl_autoload_call('App\\Http\\Contro...')
+#6 /home/adbluefinder/pu in /home/adbluefinder/public_html/staging/app/Http/Controllers/Api/v1/AuthController.php on line 17
+[18-Mar-2019 07:04:36 UTC] PHP Fatal error:  main(): Failed opening required '/home/adbluefinder/public_html/staging/app/Http/Controllers/Api/v1Twilio/autoload.php' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/adbluefinder/public_html/staging/app/Http/Controllers/Api/v1/AuthController.php on line 17
+[18-Mar-2019 07:08:27 UTC] PHP Warning:  Uncaught ErrorException: require_once(/home/adbluefinder/public_html/staging/vendeor/twillio/sdk/Twilio/autoload.php): failed to open stream: No such file or directory in /home/adbluefinder/public_html/staging/app/Http/Controllers/Api/v1/AuthController.php:17
+Stack trace:
+#0 /home/adbluefinder/public_html/staging/app/Http/Controllers/Api/v1/AuthController.php(17): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(/h...', '/home/adbluefin...', 17, Array)
+#1 /home/adbluefinder/public_html/staging/app/Http/Controllers/Api/v1/AuthController.php(17): require_once()
+#2 /home/adbluefinder/public_html/staging/vendor/composer/ClassLoader.php(444): include('/home/adbluefin...')
+#3 /home/adbluefinder/public_html/staging/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/adbluefin...')
+#4 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Http\\Contro...')
+#5 [internal function]: spl_autoload_call('App\\Http\\Contro...')
+#6 /home/adbluefinder/public_ht in /home/adbluefinder/public_html/staging/app/Http/Controllers/Api/v1/AuthController.php on line 17
+[18-Mar-2019 07:08:27 UTC] PHP Fatal error:  main(): Failed opening required '/home/adbluefinder/public_html/staging/vendeor/twillio/sdk/Twilio/autoload.php' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/adbluefinder/public_html/staging/app/Http/Controllers/Api/v1/AuthController.php on line 17
+[26-Mar-2019 06:39:55 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 25169920 bytes) in /home/adbluefinder/public_html/staging/app/Shop/PaymentMethods/Stripe/StripeRepository.php on line 52
+[26-Mar-2019 06:40:21 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 25169920 bytes) in /home/adbluefinder/public_html/staging/app/Shop/PaymentMethods/Stripe/StripeRepository.php on line 52
+[27-Mar-2019 05:38:19 UTC] Stripe Notice: Undefined property of Stripe\Customer instance: sources
+[29-Mar-2019 06:25:39 UTC] PHP Fatal error:  Trait 'App\Http\Controllers\Api\v1\Servicer\Orders\AddressTransformable' not found in /home/adbluefinder/public_html/staging/app/Http/Controllers/Api/v1/Servicer/Orders/OrderController.php on line 25
+[02-Apr-2019 11:26:23 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 23072768 bytes) in /home/adbluefinder/public_html/staging/app/Http/Controllers/Front/ProductController.php on line 73
+[02-Apr-2019 11:27:47 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 23072768 bytes) in /home/adbluefinder/public_html/staging/app/Http/Controllers/Front/ProductController.php on line 73
+[02-Apr-2019 11:31:20 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 23072768 bytes) in /home/adbluefinder/public_html/staging/app/Http/Controllers/Front/ProductController.php on line 73
+[02-Apr-2019 11:31:34 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 23072768 bytes) in /home/adbluefinder/public_html/staging/app/Http/Controllers/Front/ProductController.php on line 73
+[02-Apr-2019 11:31:37 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 23072768 bytes) in /home/adbluefinder/public_html/staging/app/Http/Controllers/Front/ProductController.php on line 73
