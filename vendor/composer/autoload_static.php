@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit3fa721b694ab586efaaa07baf59383c0
+class ComposerStaticInitba8643dc5c13778d4542dbaead2ee652
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -5360,6 +5360,57 @@ class ComposerStaticInit3fa721b694ab586efaaa07baf59383c0
         'Symfony\\Polyfill\\Ctype\\Ctype' => __DIR__ . '/..' . '/symfony/polyfill-ctype/Ctype.php',
         'Symfony\\Polyfill\\Mbstring\\Mbstring' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/Mbstring.php',
         'Symfony\\Polyfill\\Php72\\Php72' => __DIR__ . '/..' . '/symfony/polyfill-php72/Php72.php',
+        'Tests\\CreatesApplication' => __DIR__ . '/../..' . '/tests/CreatesApplication.php',
+        'Tests\\Feature\\Admin\\Addresses\\AddressFeatureTest' => __DIR__ . '/../..' . '/tests/Feature/Admin/Addresses/AddressFeatureTest.php',
+        'Tests\\Feature\\Admin\\AttributeValues\\AttributeValuesFeatureTest' => __DIR__ . '/../..' . '/tests/Feature/Admin/AttributeValues/AttributeValuesFeatureTest.php',
+        'Tests\\Feature\\Admin\\Attributes\\AttributesFeatureTest' => __DIR__ . '/../..' . '/tests/Feature/Admin/Attributes/AttributesFeatureTest.php',
+        'Tests\\Feature\\Admin\\Brands\\BrandFeatureTest' => __DIR__ . '/../..' . '/tests/Feature/Admin/Brands/BrandFeatureTest.php',
+        'Tests\\Feature\\Admin\\Categories\\CategoryFeatureTest' => __DIR__ . '/../..' . '/tests/Feature/Admin/Categories/CategoryFeatureTest.php',
+        'Tests\\Feature\\Admin\\Countries\\CountryFeatureTest' => __DIR__ . '/../..' . '/tests/Feature/Admin/Countries/CountryFeatureTest.php',
+        'Tests\\Feature\\Admin\\Dashboard\\DashboardFeatureTest' => __DIR__ . '/../..' . '/tests/Feature/Admin/Dashboard/DashboardFeatureTest.php',
+        'Tests\\Feature\\Admin\\Employees\\EmployeeFeatureTest' => __DIR__ . '/../..' . '/tests/Feature/Admin/Employees/EmployeeFeatureTest.php',
+        'Tests\\Feature\\Admin\\OrderStatus\\OrderStatusFeatureTest' => __DIR__ . '/../..' . '/tests/Feature/Admin/OrderStatus/OrderStatusFeatureTest.php',
+        'Tests\\Feature\\Admin\\Orders\\OrderFeatureTest' => __DIR__ . '/../..' . '/tests/Feature/Admin/Orders/OrderFeatureTest.php',
+        'Tests\\Feature\\Admin\\Permissions\\PermissionFeatureTest' => __DIR__ . '/../..' . '/tests/Feature/Admin/Permissions/PermissionFeatureTest.php',
+        'Tests\\Feature\\Admin\\Provinces\\ProvinceFeatureTest' => __DIR__ . '/../..' . '/tests/Feature/Admin/Provinces/ProvinceFeatureTest.php',
+        'Tests\\Feature\\Admin\\Roles\\RoleFeatureTest' => __DIR__ . '/../..' . '/tests/Feature/Admin/Roles/RoleFeatureTest.php',
+        'Tests\\Feature\\CityFeatureTest' => __DIR__ . '/../..' . '/tests/Feature/Admin/Cities/CityFeatureTest.php',
+        'Tests\\Feature\\CourierFeatureTest' => __DIR__ . '/../..' . '/tests/Feature/Admin/Courier/CourierFeatureTest.php',
+        'Tests\\Feature\\CreateProductPageTest' => __DIR__ . '/../..' . '/tests/Feature/Admin/Products/CreateProductPageTest.php',
+        'Tests\\Feature\\CustomersFeatureTest' => __DIR__ . '/../..' . '/tests/Feature/Admin/Customers/CustomersFeatureTest.php',
+        'Tests\\Feature\\Front\\Accounts\\FrontAccountsFeatureTest' => __DIR__ . '/../..' . '/tests/Feature/Front/Accounts/FrontAccountsFeatureTest.php',
+        'Tests\\Feature\\Front\\Cart\\CartFeatureTest' => __DIR__ . '/../..' . '/tests/Feature/Front/Cart/CartFeatureTest.php',
+        'Tests\\Feature\\Front\\Checkout\\CheckoutFeatureTest' => __DIR__ . '/../..' . '/tests/Feature/Front/Checkout/CheckoutFeatureTest.php',
+        'Tests\\Feature\\Front\\CustomerAddresses\\CustomerAddressFeatureTest' => __DIR__ . '/../..' . '/tests/Feature/Front/CustomerAddresses/CustomerAddressFeatureTest.php',
+        'Tests\\Feature\\Front\\FrontCategoryFeatureTest' => __DIR__ . '/../..' . '/tests/Feature/Front/Categories/FrontCategoryFeatureTest.php',
+        'Tests\\Feature\\Front\\Home\\HomeFeatureTest' => __DIR__ . '/../..' . '/tests/Feature/Front/Home/HomeFeatureTest.php',
+        'Tests\\Feature\\Front\\Products\\FrontProductFeatureTest' => __DIR__ . '/../..' . '/tests/Feature/Front/Products/FrontProductFeatureTest.php',
+        'Tests\\Feature\\Front\\States\\StateFeatureTest' => __DIR__ . '/../..' . '/tests/Feature/Front/States/StateFeatureTest.php',
+        'Tests\\Feature\\ProductFeatureTest' => __DIR__ . '/../..' . '/tests/Feature/Admin/Products/ProductFeatureTest.php',
+        'Tests\\TestCase' => __DIR__ . '/../..' . '/tests/TestCase.php',
+        'Tests\\Unit\\Address\\AddressUnitTest' => __DIR__ . '/../..' . '/tests/Unit/Address/AddressUnitTest.php',
+        'Tests\\Unit\\ArtisanCommands' => __DIR__ . '/../..' . '/tests/Unit/ArtisanCommands.php',
+        'Tests\\Unit\\AttributeValues\\AttributeValueUnitTest' => __DIR__ . '/../..' . '/tests/Unit/AttributeValues/AttributeValueUnitTest.php',
+        'Tests\\Unit\\Attributes\\AttributeUnitTest' => __DIR__ . '/../..' . '/tests/Unit/Attributes/AttributeUnitTest.php',
+        'Tests\\Unit\\Brands\\BrandUnitTest' => __DIR__ . '/../..' . '/tests/Unit/Brands/BrandUnitTest.php',
+        'Tests\\Unit\\Cart\\CartUnitTest' => __DIR__ . '/../..' . '/tests/Unit/Cart/CartUnitTest.php',
+        'Tests\\Unit\\Categories\\CategoryProductsUnitTest' => __DIR__ . '/../..' . '/tests/Unit/Categories/CategoryProductsUnitTest.php',
+        'Tests\\Unit\\Categories\\CategoryUnitTest' => __DIR__ . '/../..' . '/tests/Unit/Categories/CategoryUnitTest.php',
+        'Tests\\Unit\\Cities\\CityUnitTest' => __DIR__ . '/../..' . '/tests/Unit/Cities/CityUnitTest.php',
+        'Tests\\Unit\\Countries\\CountryUnitTest' => __DIR__ . '/../..' . '/tests/Unit/Countries/CountryUnitTest.php',
+        'Tests\\Unit\\Courier\\CourierUnitTest' => __DIR__ . '/../..' . '/tests/Unit/Courier/CourierUnitTest.php',
+        'Tests\\Unit\\Customers\\CustomerUnitTest' => __DIR__ . '/../..' . '/tests/Unit/Customers/CustomerUnitTest.php',
+        'Tests\\Unit\\Employees\\EmployeeUnitTest' => __DIR__ . '/../..' . '/tests/Unit/Employees/EmployeeUnitTest.php',
+        'Tests\\Unit\\OrderAddress\\OrderAddressUnitTest' => __DIR__ . '/../..' . '/tests/Unit/OrderAddress/OrderAddressUnitTest.php',
+        'Tests\\Unit\\OrderDetails\\OrderDetailsUnitTest' => __DIR__ . '/../..' . '/tests/Unit/OrderDetails/OrderDetailsUnitTest.php',
+        'Tests\\Unit\\OrderStatuses\\OrderStatusUnitTest' => __DIR__ . '/../..' . '/tests/Unit/OrderStatuses/OrderStatusUnitTest.php',
+        'Tests\\Unit\\Orders\\OrderUnitTest' => __DIR__ . '/../..' . '/tests/Unit/Orders/OrderUnitTest.php',
+        'Tests\\Unit\\Permissions\\PermissionUnitTest' => __DIR__ . '/../..' . '/tests/Unit/Permissions/PermissionUnitTest.php',
+        'Tests\\Unit\\ProductAttributeCombinations\\ProductAttributeCombinationsUnitTest' => __DIR__ . '/../..' . '/tests/Unit/ProductAttributeCombinations/ProductAttributeCombinationsUnitTest.php',
+        'Tests\\Unit\\ProductAttributes\\ProductAttributeUnitTest' => __DIR__ . '/../..' . '/tests/Unit/ProductAttributes/ProductAttributeUnitTest.php',
+        'Tests\\Unit\\Products\\ProductUnitTest' => __DIR__ . '/../..' . '/tests/Unit/Products/ProductUnitTest.php',
+        'Tests\\Unit\\Provinces\\ProvincesUnitTest' => __DIR__ . '/../..' . '/tests/Unit/Provinces/ProvincesUnitTest.php',
+        'Tests\\Unit\\Roles\\RoleUnitTest' => __DIR__ . '/../..' . '/tests/Unit/Roles/RoleUnitTest.php',
         'Text_Template' => __DIR__ . '/..' . '/phpunit/php-text-template/src/Template.php',
         'TheSeer\\Tokenizer\\Exception' => __DIR__ . '/..' . '/theseer/tokenizer/src/Exception.php',
         'TheSeer\\Tokenizer\\NamespaceUri' => __DIR__ . '/..' . '/theseer/tokenizer/src/NamespaceUri.php',
@@ -5474,11 +5525,11 @@ class ComposerStaticInit3fa721b694ab586efaaa07baf59383c0
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit3fa721b694ab586efaaa07baf59383c0::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit3fa721b694ab586efaaa07baf59383c0::$prefixDirsPsr4;
-            $loader->fallbackDirsPsr4 = ComposerStaticInit3fa721b694ab586efaaa07baf59383c0::$fallbackDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit3fa721b694ab586efaaa07baf59383c0::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit3fa721b694ab586efaaa07baf59383c0::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitba8643dc5c13778d4542dbaead2ee652::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitba8643dc5c13778d4542dbaead2ee652::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInitba8643dc5c13778d4542dbaead2ee652::$fallbackDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitba8643dc5c13778d4542dbaead2ee652::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitba8643dc5c13778d4542dbaead2ee652::$classMap;
 
         }, null, ClassLoader::class);
     }
