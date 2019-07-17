@@ -116,7 +116,7 @@ class CustomerController extends Controller
      * On/Off push notifications status
      * 
      */
-    public function upudatePushNotification(Request $request)
+    public function updatePushNotification(Request $request)
     {
         $this->validation($request->all(), [
             'push_notify' => 'required',
