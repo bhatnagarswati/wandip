@@ -87,7 +87,7 @@ class ShopController
     // Shop Page
     public function shop(Request $request)
     {
-
+        //return $request->all();
         if ($request->session()->has('sessionUserLat') && $request->session()->has('sessionUserLong')) {
             $userLatitude = $request->session()->get('sessionUserLat');
             $userLongitude = $request->session()->get('sessionUserLong');
@@ -187,8 +187,13 @@ class ShopController
         // Load Brands
         $brands = $this->brandRepo->listBrands(['*'], 'name', 'asc')->where('languageType', Config::get('app.locale'))->where('status', '1')->all();
     //return $products;
-        return view('front.index', compact('products', 'pagination', 'products_count', 'categories', 'brands', 'bycategories', 'bybrands', 'byservice', 'sortOrder', 'minprice', 'maxprice'));
+
+        if($request->ajax()){
+            $returnHTML = view('front.products.shop-list', ['products' => $products, 'pagination' => $pagination])->render();
+            return response()->json(array('success' => true, 'html'=>$returnHTML,'product_count'=>$products_count));
+        }else {
+            return view('front.index', compact('products', 'pagination', 'products_count', 'categories', 'brands', 'bycategories', 'bybrands', 'byservice', 'sortOrder', 'minprice', 'maxprice'));
+        }
 
     }
-
 }

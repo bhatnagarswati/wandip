@@ -19,13 +19,14 @@
             @foreach($categories as $category)
             <div class="custom_checkbox">
                 <label><input name='bycategories[]' @php if(!empty($bycategories)){ if(in_array($category->id ,
-                    $bycategories)){ echo "checked";} } @endphp type="checkbox" value='{{ $category->id }}' /><span
+                    $bycategories)){ echo "checked";} } @endphp type="checkbox" value='{{ $category->id }}' class="category"/><span
                         class="check_text"></span>{{ $category->name }}</label>
             </div>
 
             @endforeach
         </div>
     </div>
+
 
     <div class="product_sidebar_bx product_brand_bx">
         <h4>{{  __('common.product_sidebar_bybrands') }}</h4>
@@ -34,7 +35,7 @@
             @foreach($brands as $brand)
             <div class="custom_checkbox">
                 <label><input name='bybrands[]' @php if(!empty($bybrands)){ if(in_array($brand->id ,
-                    $bybrands)){ echo "checked";} } @endphp type="checkbox" value='{{ $brand->id }}' /><span
+                    $bybrands)){ echo "checked";} } @endphp type="checkbox" value='{{ $brand->id }}' class="brand" /><span
                         class="check_text"></span>{{ $brand->name }}</label>
             </div>
             @endforeach
@@ -47,12 +48,12 @@
         <div class="product_type_checkbox checkbox_outer">
             <div class="custom_checkbox">
                 <label><input type="checkbox" @php if(!empty($byservice)){ if(in_array('home_delivery' ,
-                    $byservice)){ echo "checked";} } @endphp name='byservice[]' value="home_delivery" /><span
+                    $byservice)){ echo "checked";} } @endphp name='byservice[]' value="home_delivery" class="service"/><span
                         class="check_text"></span>{{  __('common.product_sidebar_byservice_home') }}</label>
             </div>
             <div class="custom_checkbox">
                 <label><input type="checkbox" @php if(!empty($byservice)){ if(in_array('pick_up' ,
-                    $byservice)){ echo "checked";} } @endphp name='byservice[]' value="pick_up" /><span
+                    $byservice)){ echo "checked";} } @endphp name='byservice[]' value="pick_up" class="service" /><span
                         class="check_text"></span>{{  __('common.product_sidebar_byservice_pick') }}</label>
             </div>
         </div>
@@ -130,7 +131,32 @@ $('#rangeslider').slider({
           $('.price-range-both').css('display', 'none');
       }
 
+  },
+    change: function(event, ui) {
+    //console.log('dd');
+    var minval = $('#minval').val();
+    var maxval = $('#maxval').val();
+    var category = [];
+    $.each($(".category:checked"), function(){
+        category.push($(this).val());
+    });
+    var brand = [];
+    $.each($(".brand:checked"), function(){
+        brand.push($(this).val());
+    });
+    var service = [];
+    $.each($(".service:checked"), function(){
+        service.push($(this).val());
+    });
+    //console.log(minval);
+    //console.log(maxval);
+    // console.log(category);
+    // console.log(brand);
+    // console.log(service);
+    filterAjax(minval, maxval, category, brand, service);
+
   }
+
 });
 
 $('.ui-slider-range').append('<span class="price-range-both value"><i>$' + $('#rangeslider').slider('values', 0) + ' - </i>' + $('#rangeslider').slider('values', 1) + '</span>');
@@ -139,6 +165,75 @@ $('.ui-slider-handle:eq(0)').append('<span class="price-range-min value">$' + $(
 
 $('.ui-slider-handle:eq(1)').append('<span class="price-range-max value">$' + $('#rangeslider').slider('values', 1) + '</span>');
 
+
+$('.category').click(function () {
+    //console.log('dd');
+    var minval = $('#minval').val();
+    var maxval = $('#maxval').val();
+    var category = [];
+    $.each($(".category:checked"), function(){
+        category.push($(this).val());
+    });
+    var brand = [];
+    $.each($(".brand:checked"), function(){
+        brand.push($(this).val());
+    });
+    var service = [];
+    $.each($(".service:checked"), function(){
+        service.push($(this).val());
+    });
+    filterAjax(minval, maxval, category, brand, service);
+});
+$('.brand').click(function () {
+    var minval = $('#minval').val();
+    var maxval = $('#maxval').val();
+    var category = [];
+    $.each($(".category:checked"), function(){
+        category.push($(this).val());
+    });
+    var brand = [];
+    $.each($(".brand:checked"), function(){
+        brand.push($(this).val());
+    });
+    var service = [];
+    $.each($(".service:checked"), function(){
+        service.push($(this).val());
+    });
+
+    filterAjax(minval, maxval, category, brand, service);
+});
+$('.service').click(function () {
+    var minval = $('#minval').val();
+    var maxval = $('#maxval').val();
+    var category = [];
+    $.each($(".category:checked"), function(){
+        category.push($(this).val());
+    });
+    var brand = [];
+    $.each($(".brand:checked"), function(){
+        brand.push($(this).val());
+    });
+    var service = [];
+    $.each($(".service:checked"), function(){
+        service.push($(this).val());
+    });
+    filterAjax(minval, maxval, category, brand, service);
+});
+
+function filterAjax(minval, maxval, category, brand, service){
+    $.ajax({
+        type:"POST",
+        //url:'{{ route('product_filter') }}',
+        url: '{{ url('/shop') }}',
+        data:{minval:minval,maxval:maxval,bycategories:category,bybrands:brand,byservice:service,shop_sort_filter:"sort_asc",filter_search:"Filter Products","_token": "{{ csrf_token() }}",},    // multiple data sent using ajax
+        success: function (data) {
+            //console.log(data.html);
+            $('.products_list_outer').html(data.html);
+            $('.product_count p').html(data.product_count+' Product');
+          }
+    });
+    return false;
+}
 
 </script>
 
