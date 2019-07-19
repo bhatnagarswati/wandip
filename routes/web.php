@@ -73,6 +73,11 @@ Route::group(['prefix' => 'admin', 'middleware' => ['employee'], 'as' => 'admin.
                 Route::resource('blogs', 'BlogController');
             });
 
+            // TeamMembers
+            Route::namespace ('TeamMember')->group(function () {
+                Route::resource('teams', 'TeamMemberController');
+            });
+
             Route::namespace ('RouteRequests')->group(function () {
                 Route::resource('requests', 'RouteRequestController');
             });

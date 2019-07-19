@@ -64,6 +64,21 @@
                 </ul>
             </li>
 
+            <li class="treeview @if(request()->segment(2) == 'teams') active @endif">
+                <a href="#">
+                    <i class="fa fa-file"></i> <span>{{ __('admin/sidebar.sidemenu_teams') }}</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="{{ route('admin.teams.index') }}"><i class="fa fa-circle-o"></i>
+                            {{ __('admin/sidebar.sidemenu_listteams') }} </a></li>
+                    <li><a href="{{ route('admin.teams.create') }}"><i class="fa fa-plus"></i>
+                            {{ __('admin/sidebar.sidemenu_addteams') }}</a></li>
+                </ul>
+            </li>
+
 
             <li class="header">{{ __('admin/sidebar.sidemenu_users') }}</li>
 

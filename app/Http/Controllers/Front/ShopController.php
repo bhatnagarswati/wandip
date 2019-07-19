@@ -186,7 +186,7 @@ class ShopController
         $categories = $this->categoryRepo->rootCategories('created_at', 'desc');
         // Load Brands
         $brands = $this->brandRepo->listBrands(['*'], 'name', 'asc')->where('languageType', Config::get('app.locale'))->where('status', '1')->all();
-
+    //return $products;
         return view('front.index', compact('products', 'pagination', 'products_count', 'categories', 'brands', 'bycategories', 'bybrands', 'byservice', 'sortOrder', 'minprice', 'maxprice'));
 
     }
