@@ -170,7 +170,7 @@ class HomeController
         //$res = CmsPage::where(['id' => $pageId, 'pageType' => 'website', 'languageType' => Config::get('app.locale')])->first();
         $aboutPage = CmsPage::where(['id' => $pageId, 'pageType' => 'website'])->first();
         $team_members = Team::where('status', 1)->get();
-        return view('front.about-us', compact('aboutPage'));
+        return view('front.about-us', compact('aboutPage', 'team_members'));
     }
 
     //About us Page
