@@ -23,7 +23,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Session;
 use Validator;
-use App\Shop\Teams as Team;
+use App\Shop\Teams\Team;
 
 class HomeController
 {
