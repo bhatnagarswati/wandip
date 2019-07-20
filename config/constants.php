@@ -19,4 +19,6 @@ return [
     'page_pull_path' => 'https://staging.adbluefinder.com/public/uploads/pages/',
     'blog_pic' => 'public/uploads/blogs',
     'blog_pull_path' => 'https://staging.adbluefinder.com/public/uploads/blogs/',
+    'team_pic' => 'public/uploads/teams',
+    'team_pull_path' => 'https://staging.adbluefinder.com/public/uploads/teams/',
 ];
