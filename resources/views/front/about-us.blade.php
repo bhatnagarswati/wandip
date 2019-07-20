@@ -28,81 +28,32 @@
              <h2> @php echo html_entity_decode(stripslashes(__('common.about_page_ourteam'))) @endphp </h2>
            </div>
          <div class="row">
+          @foreach($team_members as $team)
               <div class="col-md-3">
                <div class="team_bx">
                    <div class="team_pro_bx">
-                     <figure class="banner_figure" style="background-image: url('{{ asset('public/images/our_team_1.jpg')}}')"></figure>
+                     <figure class="banner_figure" style="background-image: url('{{ config('constants.team_pull_path').$team->image}}')"></figure>
                        <div class="sm_icon_bx">
                          <ul>
-                           <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                           <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                           <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                         @if(!empty($team->facebook_link))
+                           <li><a href="{{ $team->facebook_link }}"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                           @endif
+                           @if(!empty($team->twitter_link))
+                           <li><a href="{{ $team->twitter_link }}"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                           @endif
+                           @if(!empty($team->linkedin_link))
+                           <li><a href="{{ $team->linkedin_link }}"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                           @endif
                            </ul>
                        </div>
                    </div>
                    <div class="team_about">
-                     <h3>Rose Merry</h3>
-                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse purus enim, elementum ut interdum ut..</p>
+                     <h3>{{ $team->name }}</h3>
+                       <p>{!! $team->description !!}</p>
                    </div>
                   </div>
              </div>
-             
-              <div class="col-md-3">
-               <div class="team_bx">
-                   <div class="team_pro_bx">
-                     <figure class="banner_figure" style="background-image: url('{{ asset('public/images/our_team_2.jpg')}}')"></figure>
-                       <div class="sm_icon_bx">
-                         <ul>
-                           <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                           <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                           <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                           </ul>
-                       </div>
-                   </div>
-                   <div class="team_about">
-                     <h3>Stephan</h3>
-                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse purus enim, elementum ut interdum ut..</p>
-                   </div>
-                  </div>
-             </div>
-             
-              <div class="col-md-3">
-               <div class="team_bx">
-                   <div class="team_pro_bx">
-                     <figure class="banner_figure" style="background-image: url('{{ asset('public/images/our_team_3.jpg') }}')"></figure>
-                       <div class="sm_icon_bx">
-                         <ul>
-                           <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                           <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                           <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                           </ul>
-                       </div>
-                   </div>
-                   <div class="team_about">
-                     <h3>Laura</h3>
-                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse purus enim, elementum ut interdum ut..</p>
-                   </div>
-                  </div>
-             </div>
-             
-              <div class="col-md-3">
-               <div class="team_bx">
-                   <div class="team_pro_bx">
-                     <figure class="banner_figure" style="background-image: url('{{ asset('public/images/our_team_4.jpg')}}')"></figure>
-                       <div class="sm_icon_bx">
-                         <ul>
-                           <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                           <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                           <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                           </ul>
-                       </div>
-                   </div>
-                   <div class="team_about">
-                     <h3>John Smith</h3>
-                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse purus enim, elementum ut interdum ut..</p>
-                   </div>
-                  </div>
-             </div>
+             @endforeach
            </div>
         </div>
     </section>
