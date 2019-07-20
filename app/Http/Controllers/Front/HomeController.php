@@ -23,6 +23,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Session;
 use Validator;
+use App\Shop\Teams as Team;
 
 class HomeController
 {
@@ -168,6 +169,7 @@ class HomeController
         $pageId = 1;
         //$res = CmsPage::where(['id' => $pageId, 'pageType' => 'website', 'languageType' => Config::get('app.locale')])->first();
         $aboutPage = CmsPage::where(['id' => $pageId, 'pageType' => 'website'])->first();
+        $team_members = Team::where('status', 1)->get();
         return view('front.about-us', compact('aboutPage'));
     }
 
