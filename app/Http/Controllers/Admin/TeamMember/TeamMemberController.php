@@ -138,6 +138,16 @@ class TeamMemberController extends Controller
             return redirect()->back()->withErrors($validator)->withInput();
         }
 
+        if ($request->hasFile('teamImage')) {
+            $file = $request->file('teamImage');
+
+            $fileName = str_random(10) . '.' . $file->getClientOriginalExtension();
+            //Upload File
+            $destinationPath = config('constants.team_pic');
+            $file->move($destinationPath, $fileName);
+            $page->image = $fileName;
+        }
+
         $page->name = addslashes($request->input('name'));
         $page->description = addslashes($request->input('description'));
 
