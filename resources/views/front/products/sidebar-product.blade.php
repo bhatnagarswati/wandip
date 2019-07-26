@@ -222,8 +222,7 @@ $('.service').click(function () {
 
 function filterAjax(minval, maxval, category, brand, service){
     $.ajax({
-        type:"POST",
-        //url:'{{ route('product_filter') }}',
+        type:"POST",        
         url: '{{ url('/shop') }}',
         data:{minval:minval,maxval:maxval,bycategories:category,bybrands:brand,byservice:service,shop_sort_filter:"sort_asc",filter_search:"Filter Products","_token": "{{ csrf_token() }}",},    // multiple data sent using ajax
         success: function (data) {
